@@ -100,13 +100,13 @@ h2 {
 }
 
 .videobox {
-    transform: skew(10deg) !important;
+    transform: skew(5deg) !important;
     box-shadow: -8px 8px 0px 2px var(--p5-red) !important;
 }
 
 
 .videobox>* {
-    transform: skew(-10deg);
+    transform: skew(-5deg);
 }
 
 .videobox h2 {
@@ -145,7 +145,7 @@ h2 {
     display: block;
 }
 
-video {
+video, img {
     border: 3px solid var(--p5-red);
     width: 100%;
     max-height: 480px;
