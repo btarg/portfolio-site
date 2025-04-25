@@ -125,6 +125,7 @@ h2 {
     border: 1px solid var(--p5-red);
     transition: background-color 0.3s ease, color 0.3s ease;
 }
+
 a.tag.button-container {
     margin-top: 1em;
     margin-left: auto;
@@ -133,8 +134,16 @@ a.tag.button-container {
     text-align: center;
 }
 
-a.tag.button-container > span {
+a.tag.button-container>span {
     font-size: 150%;
+    gap: 10px !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+a.tag.button-container>span>i {
+    color: whitesmoke;
 }
 
 .tag:hover {
