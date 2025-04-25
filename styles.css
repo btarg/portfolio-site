@@ -301,7 +301,7 @@ footer {
 }
 
 /* Style the description paragraph */
-.media p {
+.description {
     border: 2px solid var(--p5-red);
     background-color: var(--gray-800);
     background-image: radial-gradient(var(--gray-700) 1px, transparent 1px);
