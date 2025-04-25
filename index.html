@@ -46,6 +46,143 @@
             </div>
             <br>
 
+            <section id="videos">
+                <div id="box" class="videobox">
+                    <div class="media">
+                        <h2>Showcase</h2>
+            
+                        <div class="carousel-container">
+                            <button class="carousel-arrow carousel-prev" onclick="prevProject()">&lt;</button>
+            
+                            <div class="carousel">
+                                <div class="project active" id="project-1">
+                                    <video controls>
+                                        <source src="media/inkgame.mp4" type="video/mp4">
+                                        Your browser does not support the video tag.
+                                    </video>
+                                    <div class="video-tags">
+                                        <div class="tag"><span>Unity</span></div>
+                                        <div class="tag"><span>Gameplay</span></div>
+                                        <div class="tag"><span>User Interface</span></div>
+                                        <div class="tag"><span>Tools</span></div>
+                                    </div>
+                                    <p class="description">
+                                        <span>An exploration-focused game built in <span class="highlight">Unity</span>
+                                            using <span class="highlight">C#</span> and <span class="highlight">Ink</span>.
+                                            The game features a branching narrative and a custom-built dialogue system.
+                                            <br>I also built a custom <span class="highlight">Unity Editor tool</span> to
+                                            import <span class="highlight">Quake 3</span> levels built in <span
+                                                class="highlight">TrenchBroom</span>,
+                                            allowing for easy level design and
+                                            integration into the game engine.
+                                            <br>The game also features saving and loading functionality, including player
+                                            inventory and quest progress.
+                                            <br>The UI is complete and functional.
+                                        </span>
+                                    </p>
+                                </div>
+            
+                                <div class="project" id="project-2">
+                                    <video controls>
+                                        <source src="media/puzzlegame.mp4" type="video/mp4">
+                                        Your browser does not support the video tag.
+                                    </video>
+                                    <div class="video-tags">
+                                        <div class="tag"><span>Unity</span></div>
+                                        <div class="tag"><span>Gameplay</span></div>
+                                        <div class="tag"><span>Level Design</span></div>
+                                    </div>
+                                    <p class="description">
+                                        <span>A <i>Portal</i> - inspired puzzle game built in <span class="highlight">Unity</span>
+                                            using <span class="highlight">C#</span>.
+                                            <br>The game's puzzles revolve around freezing objects and rewinding them in
+                                            time, similar to the mechanics
+                                            later seen in Nintendo's <i>The Legend of Zelda: Tears of The Kingdom.</i>
+                                            <br>The game has three levels, a main menu, and save-load functionality.
+                                            <br>This project was started as a personal testbed for learning Unity around
+                                            2019, several years before
+                                            <i>Tears</i> was released.
+                                            <br>I used this as my final assignment for my <span class="highlight">Computer
+                                                Science</span> A-Level in May
+                                            2022.
+                                        </span>
+                                    </p>
+                                </div>
+            
+                                <div class="project" id="project-3">
+                                    <video controls>
+                                        <source src="media/requiem-jan28.mp4" type="video/mp4">
+                                        Your browser does not support the video tag.
+                                    </video>
+                                    <div class="video-tags">
+                                        <div class="tag"><span>Godot 4</span></div>
+                                        <div class="tag"><span>Gameplay</span></div>
+                                        <div class="tag"><span>User Interface</span></div>
+                                        <div class="tag"><span>Tools</span></div>
+                                    </div>
+                                    <p class="description">
+                                        <span>A turn-based RPG prototype built in <span class="highlight">Godot 4</span>
+                                            with <span class="highlight">GDScript</span>.
+                                            All systems shown in the video were <span class="highlight">implemented by
+                                                me</span>,
+                                            including camera controls, turn-based combat mechanics, damage calculations, and
+                                            UI.<br>
+                                            The UI was initially prototyped in Photoshop and then built using custom Control
+                                            Nodes.
+                                        </span>
+                                    </p>
+                                </div>
+            
+                                <div class="project" id="project-4">
+                                    <iframe width="100%" src="https://www.youtube.com/embed/thuyjV7FJx4"
+                                        title="YouTube video player" frameborder="0"
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                        allowfullscreen>
+                                    </iframe>
+                                    <div class="video-tags">
+                                        <div class="tag"><span>Minecraft Forge</span></div>
+                                        <div class="tag"><span>Java</span></div>
+                                        <div class="tag"><span>User Interface</span></div>
+                                        <div class="tag"><span>Tools</span></div>
+                                    </div>
+                                    <p class="description">
+                                        <span>
+                                            A Minecraft mod which allows a streamer's Twitch chat to control their game,
+                                            using a custom command system.
+                                            <br>The mod was built using <span class="highlight">Minecraft Forge</span> in
+                                            <span class="highlight">Java</span>.
+                                            <br>It was designed to be the easiest to use and most flexible chat control mod
+                                            available, with a custom command system which allows for easy expansion by other
+                                            mod developers.
+            
+                                            <br>It is available from CurseForge and Modrinth, and has been downloaded over
+                                            <span class="highlight">20,000</span> times.
+                                            <br>I started making this mod in 2019 while I was still at school, and it has
+                                            been used by several popular streamers. I turned some of their highlights into
+                                            my own YouTube videos.
+            
+            
+                                        </span>
+                                    </p>
+                                </div>
+            
+                            </div>
+            
+                            <button class="carousel-arrow carousel-next" onclick="nextProject()">&gt;</button>
+                        </div>
+            
+                        <div class="carousel-dots">
+                            <span class="dot active" onclick="showProject(0)"></span>
+                            <span class="dot" onclick="showProject(1)"></span>
+                            <span class="dot" onclick="showProject(2)"></span>
+                            <span class="dot" onclick="showProject(3)"></span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <br>
+            <br>
+
             <div class="description smalldesc">
                 <img src="media/ben-cropped.png" alt="Ben Targett" class="profile-image">
                 <div class="description-text">
@@ -95,164 +232,56 @@
                 </div>
             </div>
         </section>
-        <br>
-        <br>
-        <section id="videos">
-            <div id="box" class="videobox">
-                <div class="media">
-                    <h2>Showcase</h2>
 
-                    <div class="carousel-container">
-                        <button class="carousel-arrow carousel-prev" onclick="prevProject()">&lt;</button>
-
-                        <div class="carousel">
-                            <div class="project active" id="project-1">
-                                <video controls>
-                                    <source src="media/inkgame.mp4" type="video/mp4">
-                                    Your browser does not support the video tag.
-                                </video>
-                                <div class="video-tags">
-                                    <div class="tag"><span>Unity</span></div>
-                                    <div class="tag"><span>Gameplay</span></div>
-                                    <div class="tag"><span>User Interface</span></div>
-                                    <div class="tag"><span>Tools</span></div>
-                                </div>
-                                <p class="description">
-                                    <span>An exploration-focused game built in <span class="highlight">Unity</span>
-                                        using <span class="highlight">C#</span> and <span class="highlight">Ink</span>.
-                                        The game features a branching narrative and a custom-built dialogue system.
-                                        <br>I also built a custom <span class="highlight">Unity Editor tool</span> to
-                                        import <span class="highlight">Quake 3</span> levels built in <span
-                                            class="highlight">TrenchBroom</span>,
-                                        allowing for easy level design and
-                                        integration into the game engine.
-                                        <br>The game also features saving and loading functionality, including player
-                                        inventory and quest progress.
-                                        <br>The UI is complete and functional.
-                                    </span>
-                                </p>
-                            </div>
-
-                            <div class="project" id="project-2">
-                                <video controls>
-                                    <source src="media/puzzlegame.mp4" type="video/mp4">
-                                    Your browser does not support the video tag.
-                                </video>
-                                <div class="video-tags">
-                                    <div class="tag"><span>Unity</span></div>
-                                    <div class="tag"><span>Gameplay</span></div>
-                                    <div class="tag"><span>Level Design</span></div>
-                                </div>
-                                <p class="description">
-                                    <span>A <i>Portal</i> - inspired puzzle game built in <span
-                                            class="highlight">Unity</span> using <span class="highlight">C#</span>.
-                                        <br>The game's puzzles revolve around freezing objects and rewinding them in
-                                        time, similar to the mechanics
-                                        later seen in Nintendo's <i>The Legend of Zelda: Tears of The Kingdom.</i>
-                                        <br>The game has three levels, a main menu, and save-load functionality.
-                                        <br>This project was started as a personal testbed for learning Unity around
-                                        2019, several years before
-                                        <i>Tears</i> was released.
-                                        <br>I used this as my final assignment for my <span class="highlight">Computer
-                                            Science</span> A-Level in May
-                                        2022.
-                                    </span>
-                                </p>
-                            </div>
-
-                            <div class="project" id="project-3">
-                                <video controls>
-                                    <source src="media/requiem-jan28.mp4" type="video/mp4">
-                                    Your browser does not support the video tag.
-                                </video>
-                                <div class="video-tags">
-                                    <div class="tag"><span>Godot 4</span></div>
-                                    <div class="tag"><span>Gameplay</span></div>
-                                    <div class="tag"><span>User Interface</span></div>
-                                    <div class="tag"><span>Tools</span></div>
-                                </div>
-                                <p class="description">
-                                    <span>A turn-based RPG prototype built in <span class="highlight">Godot 4</span>
-                                        with <span class="highlight">GDScript</span>.
-                                        All systems shown in the video were <span class="highlight">implemented by
-                                            me</span>,
-                                        including camera controls, turn-based combat mechanics, damage calculations, and
-                                        UI.<br>
-                                        The UI was initially prototyped in Photoshop and then built using custom Control
-                                        Nodes.
-                                    </span>
-                                </p>
-                            </div>
-
-                            <div class="project" id="project-4">
-                                <iframe width="100%" src="https://www.youtube.com/embed/thuyjV7FJx4"
-                                    title="YouTube video player" frameborder="0"
-                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                    allowfullscreen>
-                                </iframe>
-                                <div class="video-tags">
-                                    <div class="tag"><span>Minecraft Forge</span></div>
-                                    <div class="tag"><span>Java</span></div>
-                                    <div class="tag"><span>User Interface</span></div>
-                                    <div class="tag"><span>Tools</span></div>
-                                </div>
-                                <p class="description">
-                                    <span>
-                                        A Minecraft mod which allows a streamer's Twitch chat to control their game,
-                                        using a custom command system.
-                                        <br>The mod was built using <span class="highlight">Minecraft Forge</span> in
-                                        <span class="highlight">Java</span>.
-                                        <br>It was designed to be the easiest to use and most flexible chat control mod
-                                        available, with a custom command system which allows for easy expansion by other
-                                        mod developers.
-
-                                        <br>It is available from CurseForge and Modrinth, and has been downloaded over
-                                        <span class="highlight">20,000</span> times.
-                                        <br>I started making this mod in 2019 while I was still at school, and it has
-                                        been used by several popular streamers. I turned some of their highlights into
-                                        my own YouTube videos.
-
-
-                                    </span>
-                                </p>
-                            </div>
-
-                        </div>
-
-                        <button class="carousel-arrow carousel-next" onclick="nextProject()">&gt;</button>
-                    </div>
-
-                    <div class="carousel-dots">
-                        <span class="dot active" onclick="showProject(0)"></span>
-                        <span class="dot" onclick="showProject(1)"></span>
-                        <span class="dot" onclick="showProject(2)"></span>
-                        <span class="dot" onclick="showProject(3)"></span>
-                    </div>
-                </div>
-            </div>
-        </section>
 
         <footer>
             website design &copy; 2025 <a href="https://github.com/btarg">btarg.</a> all rights reserved.
         </footer>
         <script>
-            // JavaScript for carousel functionality
             document.addEventListener('DOMContentLoaded', function () {
                 let currentProject = 0;
                 const projects = document.querySelectorAll('.project');
                 const dots = document.querySelectorAll('.dot');
+                let videos = document.querySelectorAll('video');
+
+                // Set up all videos with autoplay and muted attributes
+                videos.forEach(video => {
+                    video.muted = true;
+                    video.autoplay = true;
+
+                    // Add event listener for when video ends
+                    video.addEventListener('ended', function () {
+                        // Only advance if this is the currently active video
+                        if (video.closest('.project').classList.contains('active')) {
+                            nextProject();
+                        }
+                    });
+                });
 
                 function showProject(index) {
-                    // Hide all projects
+                    // Hide all projects and pause all videos
                     for (let i = 0; i < projects.length; i++) {
                         projects[i].classList.remove('active');
                         dots[i].classList.remove('active');
+
+                        // Pause any videos in non-active projects
+                        let projectVideo = projects[i].querySelector('video');
+                        if (projectVideo) {
+                            projectVideo.pause();
+                            projectVideo.currentTime = 0;
+                        }
                     }
 
                     // Show the selected project
                     projects[index].classList.add('active');
                     dots[index].classList.add('active');
                     currentProject = index;
+
+                    // Play the video in the active project if it exists
+                    let activeVideo = projects[index].querySelector('video');
+                    if (activeVideo) {
+                        activeVideo.play();
+                    }
                 }
 
                 window.nextProject = function () {
@@ -283,6 +312,9 @@
                         prevProject();
                     }
                 });
+
+                // Initialize the first video to play
+                showProject(0);
             });
         </script>
     </div>
