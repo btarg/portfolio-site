@@ -303,6 +303,7 @@ footer {
     background-color: var(--p5-red);
 }
 
+/* Update the description box styling for better responsiveness */
 .description {
     border: 2px solid var(--p5-red);
     background-color: var(--gray-800);
@@ -326,6 +327,14 @@ footer {
     text-align: left;
 }
 
+.description.smalldesc {
+    width: 50%;
+    min-width: 300px; /* Add minimum width */
+    max-width: 800px; /* Add maximum width */
+    padding-left: 2em;
+    padding-right: 2em;
+}
+
 .description img {
     width: auto;
     max-width: 180px;
@@ -337,12 +346,6 @@ footer {
     box-shadow: 3px 3px 0px 0px var(--p5-red);
     transform: skew(5deg);
 }
-.description.smalldesc {
-    width: 50%;
-    height: 50%;
-    padding-left: 2em;
-    padding-right: 2em;
-}
 
 .description-text {
     flex: 1;
@@ -353,7 +356,13 @@ footer {
     font-size: 75%;
 }
 
-/* Media queries for responsiveness */
+/* Enhanced media queries for better responsiveness */
+@media (max-width: 1024px) {
+    .description.smalldesc {
+        width: 70%;
+    }
+}
+
 @media (max-width: 768px) {
     h1 {
         font-size: 300%;
@@ -372,5 +381,57 @@ footer {
         width: 40px;
         height: 40px;
         font-size: 24px;
+    }
+    
+    .description.smalldesc {
+        width: 85%;
+        padding: 1em;
+        min-width: 0; /* Remove minimum width constraint on mobile */
+    }
+    
+    .description {
+        flex-direction: column;
+        text-align: center;
+        padding: 1em;
+        gap: 15px;
+    }
+    
+    .description img {
+        max-width: 150px;
+        max-height: 150px;
+    }
+    
+    .description-text {
+        font-size: 110%;
+    }
+}
+
+/* Small mobile screens */
+@media (max-width: 480px) {
+    .description.smalldesc {
+        width: 95%;
+        padding: 0.8em;
+    }
+    
+    .description img {
+        max-width: 120px;
+        max-height: 120px;
+    }
+    
+    .description-text {
+        font-size: 100%;
+    }
+    
+    h1 {
+        font-size: 250%;
+    }
+    
+    h2 {
+        font-size: 150%;
+    }
+    
+    #box {
+        width: 95%;
+        padding: 10px;
     }
 }
