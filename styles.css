@@ -303,7 +303,6 @@ footer {
     background-color: var(--p5-red);
 }
 
-/* Update the description box styling for better responsiveness */
 .description {
     border: 2px solid var(--p5-red);
     background-color: var(--gray-800);
@@ -329,8 +328,8 @@ footer {
 
 .description.smalldesc {
     width: 50%;
-    min-width: 300px; /* Add minimum width */
-    max-width: 800px; /* Add maximum width */
+    min-width: 300px;
+    max-width: 800px;
     padding-left: 2em;
     padding-right: 2em;
 }
