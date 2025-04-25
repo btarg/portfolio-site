@@ -144,7 +144,7 @@ h2 {
     display: block;
 }
 
-video, img {
+video, img, iframe {
     border: 3px solid var(--p5-red);
     max-width: 100%;
     max-height: 360px;
