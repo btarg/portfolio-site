@@ -46,8 +46,10 @@ h2 {
     margin-top: 1rem;
 }
 .icons i {
-    color: whitesmoke;
     font-size: 2.5rem;
+}
+a i {
+    color: white;
 }
 
 .contact-info {
@@ -368,7 +370,6 @@ footer {
     font-size: 75%;
 }
 
-/* Enhanced media queries for better responsiveness */
 @media (max-width: 1024px) {
     .description.smalldesc {
         width: 70%;
@@ -445,5 +446,114 @@ footer {
     #box {
         width: 95%;
         padding: 10px;
+    }
+}
+
+/* Skills and Links Bar */
+.skills-links-bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; /* Keep space-between */
+    align-items: center;
+    width: 100%;
+    margin: 10px 0;
+    padding: 5px 0; /* Keep vertical padding */
+    border-top: 1px solid rgba(230, 0, 18, 0.3);
+    border-bottom: 1px solid rgba(230, 0, 18, 0.3);
+}
+
+.skills-section {
+    display: flex;
+    gap: 10px;
+    padding-left: 10px;
+    width: 150px; /* Define a fixed width - adjust as needed */
+    justify-content: flex-start; /* Align content to the start */
+    flex-shrink: 0;
+}
+
+.skills-section i {
+    font-size: 1.6rem;
+    color: white;
+    transition: color 0.3s ease;
+}
+
+.skills-section i:hover {
+    color: var(--p5-red);
+}
+
+.links-section {
+    display: flex;
+    gap: 10px;
+    padding-right: 10px;
+    justify-content: flex-end; /* Align content to the end */
+    width: 150px; /* MUST match the width of .skills-section */
+    flex-shrink: 0;
+    text-align: right; /* Helps align content within the fixed width */
+}
+
+.link-button {
+    background-color: black;
+    color: white;
+    padding: 5px 12px;
+    font-size: 80%;
+    font-weight: bold;
+    text-transform: uppercase;
+    transform: skew(-15deg);
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    border: 2px solid var(--p5-red);
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.link-button:hover {
+    background-color: var(--p5-red);
+    color: white;
+    text-shadow: none;
+}
+
+.link-button i {
+    transform: skew(15deg);
+}
+.link-button img {
+    transform: skew(15deg);
+}
+
+.link-button span {
+    transform: skew(15deg);
+}
+
+/* Ensure video-tags container itself is centered */
+.video-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    justify-content: center; /* Center tags inside the container */
+    margin: 10px auto 1rem; /* Center the container horizontally */
+    width: fit-content; /* Make container only as wide as its content */
+    max-width: 90%; /* Optional: prevent overflow */
+    padding: 0 10px; /* Add some padding if needed */
+}
+
+
+/* Responsive adjustments for the bar */
+@media (max-width: 1024px) {
+    .skills-links-bar {
+        flex-direction: column;
+        gap: 10px;
+        padding: 10px 0;
+    }
+
+    .skills-section, .links-section {
+        width: 100%; /* Full width on tablet/mobile */
+        justify-content: center; /* Center content */
+        padding: 0;
+        min-width: 0; /* Reset min-width */
+        text-align: center; /* Center text */
+    }
+
+    .video-tags {
+        width: 90%; /* Adjust width */
+        margin: 10px auto 1rem;
     }
 }
