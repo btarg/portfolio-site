@@ -366,10 +366,6 @@ footer {
     font-size: 125%;
 }
 
-.media .description {
-    font-size: 75%;
-}
-
 @media (max-width: 1024px) {
     .description.smalldesc {
         width: 70%;
