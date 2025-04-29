@@ -89,7 +89,7 @@ a i {
     border: 2px solid var(--p5-red);
     line-height: 1.5;
     width: 75%;
-    font-size: 2vh;
+    font-size: 2.5vh;
     position: relative;
     overflow: hidden;
 }
