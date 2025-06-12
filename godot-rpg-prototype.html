@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Godot Turn-based RPG - Ben Targett</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta property="og:title" content="Godot Turn-based RPG - Ben Targett">
+    <meta property="og:description"
+        content="A turn-based RPG prototype built in Godot 4 with custom combat and UI systems">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arsenal:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" href="favicon.ico">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+</head>
+
+<body>
+    <div class="main">
+        <header>
+            <nav class="main-nav">
+                <a href="index.html" class="nav-link">Portfolio</a>
+                <a href="about.html" class="nav-link">About</a>
+            </nav>
+            <h1>Godot Turn-based RPG</h1>
+            <h2>Custom Combat & UI Systems</h2>
+            <br>
+
+            <!-- Main showcase -->
+            <div id="box" class="videobox">
+                <div class="media">
+                    <video controls autoplay muted>
+                        <source src="media/requiem-jan28.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+
+                    <!-- Skills and links bar -->
+                    <div class="skills-links-bar">
+                        <div class="skills-section">
+                            <i class="devicon-godot-plain" title="Godot Engine 4 (GDScript)"></i>
+                            <i class="devicon-photoshop-plain" title="Photoshop/Photopea (UI)"></i>
+                            <i class="devicon-github-plain" title="GitHub (VCS)"></i>
+                            <i class="devicon-vscode-plain" title="VS Code"></i>
+                        </div>
+                        <div class="video-tags">
+                            <div class="tag"><span>Gameplay</span></div>
+                            <div class="tag"><span>User Interface</span></div>
+                            <div class="tag"><span>Tools</span></div>
+                        </div>
+                        <div class="links-section">
+                            <a href="https://github.com/btarg/third-person-controller" class="link-button"
+                                target="_blank">
+                                <i class="fa-brands fa-github"></i><span>View Code</span>
+                            </a>
+                            <a href="index.html" class="link-button">
+                                <i class="fa-solid fa-arrow-left"></i><span>Back to Portfolio</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <br><br>
+
+            <!-- Project Overview -->
+            <div class="description">
+                <div class="description-text">
+                    <h2>Project Overview</h2>
+                    <p>A tactical turn-based RPG prototype inspired by the <i>Persona</i> series and <i>Baldur's Gate 3</i>, built in <span class="highlight">Godot 4</span> using
+                        <span class="highlight">GDScript</span>. All systems shown in the
+                        demonstration video were implemented from scratch, with the goal of testing my understanding of game
+                        architecture and design patterns.</p>
+
+                    <p>
+                        For this project, I wanted to create a turn-based RPG that was easy to control with a gamepad,
+                        which combined my favourite aspects of RPGs I'm familiar with.
+                        I made good use of Godot's Discord community for help and advice, drawing on my experience as an
+                        English Literature student to collect player feedback and iterate on the game's design with player experience in mind.
+                    </p>
+
+                    <p>
+                        I prototyped the UI in Photoshop, making use of Control Nodes to implement the design in Godot.
+                    </p>
+
+                </div>
+
+                <div class="description-text">
+                    <h2>Key Features</h2>
+                    <ul style="text-align: left; margin: 0; padding-left: 20px;">
+
+                        <li><span class="highlight">Movement and Actions:</span> Players and enemies can move freely around the environment,
+                        spending their Actions to do so.</li>
+                        <li><span class="highlight">Spells and Items:</span> Spells can have an Area of Effect, 
+                            or target one or multiple enemies directly.</li>
+                        <li><span class="highlight">Stats and Modifiers:</span> I built a comprehensive system for base stats
+                            and modifiers (such as buffs and debuffs).</li>
+                        <li><span class="highlight">Controller-first:</span> The game is designed to be easy and intuitive to control with a gamepad,
+                            supporting switching between input methods on-the-fly and showing appropriate glyphs based on the current device.</li>
+                        <li><span class="highlight">User Interface:</span> The UI is easy to navigate with any input device, with quick shortcuts for
+                        common actions implemented across the entire game for intuitive and speedy combat.</li>
+                    </ul>
+                </div>
+
+            </div>
+
+        </header>
+
+        <br>
+        <section id="contact">
+            <div id="box" class="contact-info">
+                <div class="contact-boxes">
+                    <div id="boxrow">
+                        <i class="fa-solid fa-envelope"></i>
+                        <p><a href="mailto:bentargett@hotmail.co.uk">bentargett@hotmail.co.uk</a></p>
+                    </div>
+                    <div id="boxrow">
+                        <i class="fa-brands fa-linkedin"></i>
+                        <p><a href="https://www.linkedin.com/in/benjamin-targett/">Message me on LinkedIn</a></p>
+                    </div>
+                    <div id="boxrow">
+                        <i class="fa-brands fa-github"></i>
+                        <p><a href="https://github.com/btarg">Visit my GitHub page</a></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            website design &copy; 2025 <a href="https://github.com/btarg">btarg.</a> all rights reserved.
+        </footer>
+    </div>
+</body>
+
+</html>
