@@ -15,8 +15,8 @@
     --black-950: #101010;
     --gray-850: #181818;
     --gray-700-85: rgba(46, 46, 46, 0.85);
-    --white: #ffffff;
-    --off-white: whitesmoke;
+    --white: whitesmoke;
+    --off-white: lightgray;
     --transparent: transparent;
     --overlay-black-72: rgba(0, 0, 0, 0.72);
     --overlay-black-88: rgba(0, 0, 0, 0.88);
@@ -44,7 +44,7 @@ body {
     margin: 0;
     padding: 0;
     text-align: center;
-    color: var(--white);
+    color: var(--off-white);
     line-height: 1.6;
     min-height: 100vh;
 }
@@ -78,8 +78,16 @@ header > h2 + br {
 }
 
 header > h2 {
-    margin-top: 0.75rem;
-    margin-bottom: 0.75rem;
+    margin-top: 0.85rem;
+    margin-bottom: 1.5rem;
+    color: var(--gray-300);
+    font-family: "Arsenal", sans-serif;
+    font-size: clamp(1rem, 1.8vw, 1.35rem);
+    font-weight: 400;
+    letter-spacing: 0.16em;
+    line-height: 1.3;
+    text-shadow: none;
+    text-transform: uppercase;
 }
 
 /* Navigation */
@@ -166,7 +174,7 @@ a i {
     gap: 10px;
     background: var(--surface);
     text-align: center;
-    color: var(--white);
+    color: var(--off-white);
     font-weight: 600;
     text-shadow: none;
     padding: clamp(0.9rem, 2vw, 1.5rem);
@@ -209,7 +217,7 @@ a i {
 
 .tag {
     background-color: var(--transparent);
-    color: var(--white);
+    color: var(--off-white);
     padding: 4px 10px;
     font-size: 70%;
     font-weight: bold;
@@ -224,7 +232,10 @@ a i {
 }
 
 a.tag.button-container {
-    width: 75%;
+    width: fit-content;
+    min-width: 10.5rem;
+    box-sizing: border-box;
+    padding: 0.45rem 1rem;
     margin-top: .75em;
     margin-left: auto;
     margin-right: auto;
@@ -234,7 +245,8 @@ a.tag.button-container {
 }
 
 a.tag.button-container>span {
-    font-size: 150%;
+    font-size: 1rem;
+    line-height: 1.2;
     gap: 10px !important;
     display: flex;
     justify-content: center;
@@ -379,8 +391,14 @@ footer {
 }
 
 .project h2 {
+    display: inline-block;
     margin: 0 0 0.85rem;
+    padding-bottom: 0.25rem;
+    border-bottom: 2px solid var(--p5-red);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: italic;
     font-weight: 700;
+    letter-spacing: 0.04em;
     text-transform: uppercase;
     text-shadow: 3px 3px 0 var(--black);
 }
@@ -403,7 +421,7 @@ footer {
 
 .carousel-arrow {
     background-color: var(--black);
-    color: var(--white);
+    color: var(--off-white);
     border: 2px solid var(--p5-red);
     font-size: 32px;
     width: 50px;
@@ -437,13 +455,13 @@ footer {
 .carousel-dots {
     display: flex;
     justify-content: center;
-    margin-top: 15px;
+    margin-bottom: 15px;
     gap: 10px;
 }
 
 .dot {
-    width: 12px;
-    height: 12px;
+    width: 16px;
+    height: 16px;
     background-color: var(--gray-700);
     border: 1px solid var(--p5-red);
     display: inline-block;
@@ -468,7 +486,7 @@ footer {
     background-color: var(--gray-900);
     background-image: radial-gradient(var(--gray-800) 1px, var(--transparent) 1px);
     background-size: 10px 10px;
-    color: var(--white);
+    color: var(--off-white);
     padding: 1.5em;
     margin: 1em auto;
     transform: skew(-5deg);
@@ -520,11 +538,18 @@ footer {
     min-width: 300px;
     max-width: 800px;
     padding: 1em 2em;
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: auto 1fr;
     align-items: center;
     gap: 20px;
     text-align: left;
+}
+
+.description.smalldesc > a.tag.button-container {
+    grid-column: 1 / -1;
+    min-width: 12rem;
+    padding: 0.65rem 1.25rem;
+    justify-self: center;
 }
 
 .description img {
@@ -630,6 +655,7 @@ footer {
         width: 92%;
         padding: 1em;
         min-width: 0;
+        display: flex;
         flex-direction: column;
         text-align: center;
         align-items: center;
@@ -711,10 +737,14 @@ footer {
     justify-content: space-between; /* Keep space-between */
     align-items: center;
     width: 100%;
-    margin: 10px 0;
-    padding: 5px 0; /* Keep vertical padding */
-    border-top: 1px solid var(--accent-border-30);
-    border-bottom: 1px solid var(--accent-border-30);
+    margin-top: 1em;
+    padding: 5px 0;
+    background-image:
+        linear-gradient(to right, var(--transparent), var(--gray-700) 12%, var(--gray-700) 88%, var(--transparent)),
+        linear-gradient(to right, var(--transparent), var(--gray-700) 12%, var(--gray-700) 88%, var(--transparent));
+    background-position: top, bottom;
+    background-size: 100% 1px, 100% 1px;
+    background-repeat: no-repeat;
 }
 
 .skills-section {
@@ -748,7 +778,7 @@ footer {
 
 .link-button {
     background-color: var(--black);
-    color: var(--white);
+    color: var(--off-white);
     padding: 5px 12px;
     font-size: 80%;
     font-weight: bold;
