@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Modular Survival Shooter Prototype - Ben Targett</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta property="og:title" content="Modular Survival Shooter Prototype - Ben Targett">
+    <meta property="og:description"
+        content="A Unity survival shooter prototype with modular weapons, loot systems, and dynamic enemy spawning">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arsenal:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" href="favicon.ico">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+</head>
+
+<body>
+    <div class="main">
+        <header>
+            <nav class="main-nav">
+                <a href="index.html" class="nav-link">Portfolio</a>
+                <a href="about.html" class="nav-link">About</a>
+            </nav>
+            <h1>Modular Survival Shooter Prototype</h1>
+            <h2>Weapons, Loot, and Dynamic Difficulty</h2>
+            <br>
+
+            <div id="box" class="videobox">
+                <div class="media">
+                    <div
+                        style="left: 0; width: 100%; height: 0; position: relative; padding-bottom: 56.25%;">
+                        <iframe src="https://www.youtube.com/embed/tk1RyzHBvtY?autoplay=1&mute=1"
+                            title="Modular survival shooter prototype gameplay" frameborder="0"
+                            style="top: 0; left: 0; width: 100%; height: 100%; position: absolute; border: 0;"
+                            allowfullscreen scrolling="no"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            referrerpolicy="strict-origin-when-cross-origin">
+                        </iframe>
+                    </div>
+
+                    <div class="skills-links-bar">
+                        <div class="skills-section">
+                            <i class="devicon-unity-plain" title="Unity"></i>
+                            <i class="devicon-csharp-plain" title="C#"></i>
+                            <i class="devicon-github-plain" title="GitHub (VCS)"></i>
+                            <i class="devicon-rider-plain" title="JetBrains Rider"></i>
+                        </div>
+                        <div class="video-tags">
+                            <div class="tag"><span>Gameplay Systems</span></div>
+                            <div class="tag"><span>Weapons</span></div>
+                            <div class="tag"><span>Enemy AI</span></div>
+                            <div class="tag"><span>Scriptable Objects</span></div>
+                        </div>
+                        <div class="links-section">
+                            <a href="index.html" class="link-button">
+                                <i class="fa-solid fa-arrow-left"></i><span>Back to Portfolio</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <br><br>
+
+            <div class="description">
+                <div class="description-text">
+                    <h2>Project Overview</h2>
+                    <p>This <span class="highlight">Unity</span> survival shooter prototype explores reusable gameplay
+                        systems for weapons, loot, and enemy encounters. I initially planned a <i>Noita</i>-inspired
+                        weapon builder, but reduced the scope to swappable attachments and predefined weapons that fit
+                        the level better.</p>
+                    <p>Weapon components store their data while a central <span class="highlight">Weapon Holder</span>
+                        script owns the logic. Keeping the logic in one place made the flow easier to follow while still
+                        allowing attachments to change weapon stats and handling.</p>
+                </div>
+                <div class="description-text">
+                    <h2>Loot and Interactions</h2>
+                    <p>I built a reusable <span class="highlight">Interactable</span> system for loot chests, item
+                        pickups, money, and health. This made it quick to create new pickup prefabs and place chests in
+                        the scene.</p>
+                    <p>I simplified the original plan for procedurally generated component drops into manually placed
+                        chests with predefined contents and prices. This avoided a complex weapon-building interface and
+                        made balancing the level more manageable.</p>
+                </div>
+                <div class="description-text">
+                    <h2>Difficulty and Enemy Spawning</h2>
+                    <p>I created difficulty presets and a linked time-of-day system using <span class="highlight">Scriptable
+                            Objects</span>. This kept the settings easy to edit and let the visual day and night cycle
+                        reflect the selected difficulty.</p>
+                    <p>After reading the <span class="highlight">Risk of Rain 2</span> wiki, I implemented a simplified
+                        version of its enemy-spawning system. The system increases difficulty over time and introduces
+                        higher-level enemies without manually scripting every spawn point and encounter.</p>
+                </div>
+                <div class="description-text">
+                    <h2>What I Learned</h2>
+                    <p>The project reinforced the value of reducing scope early. Some systems became too modular for the
+                        problem they solved, such as using Scriptable Conditions where a simple minimum-money field on an
+                        Interactable would have been clearer. I would also improve the loot tables with weighted drops
+                        and spend more time refining enemy behaviours.</p>
+                </div>
+            </div>
+        </header>
+
+        <br>
+        <section id="contact">
+            <div id="box" class="contact-info">
+                <div class="contact-boxes">
+                    <div id="boxrow">
+                        <i class="fa-solid fa-envelope"></i>
+                        <p><a href="mailto:bentargett@hotmail.co.uk">bentargett@hotmail.co.uk</a></p>
+                    </div>
+                    <div id="boxrow">
+                        <i class="fa-brands fa-linkedin"></i>
+                        <p><a href="https://www.linkedin.com/in/benjamin-targett/">Message me on LinkedIn</a></p>
+                    </div>
+                    <div id="boxrow">
+                        <i class="fa-brands fa-github"></i>
+                        <p><a href="https://github.com/btarg">Visit my GitHub page</a></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            website design &copy; 2025-2026 <a href="https://github.com/btarg">btarg.</a>
+        </footer>
+    </div>
+</body>
+
+</html>
