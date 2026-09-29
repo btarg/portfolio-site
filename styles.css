@@ -60,8 +60,8 @@ h1 {
     color: var(--p5-red);
     font-style: italic;
     text-shadow: 4px 4px 0 var(--black);
-    margin-bottom: 0.2vw;
-    margin-top: 0.2vw;
+    margin-bottom: 0vw;
+    margin-top: 0vw;
     letter-spacing: 1px;
 }
 
@@ -327,6 +327,7 @@ footer {
     justify-content: center;
     width: 100%;
     padding: 0 50px;
+    box-sizing: border-box;
 }
 
 .carousel {
@@ -513,17 +514,11 @@ footer {
     }
 }
 
-@media (min-width: 769px) and (max-width: 1085px) {
-    h1 {
-        margin-top: clamp(3rem, 5vw, 4rem);
-    }
-}
-
 @media (max-width: 768px) {
     h1 {
         font-size: 300%;
         letter-spacing: 0;
-        margin-top: 0.4em;
+        margin-top: 1.5rem;
     }
 
     .main-nav {
