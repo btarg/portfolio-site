@@ -32,8 +32,11 @@
         <section class="description smalldesc portfolio-summary" aria-labelledby="summary-heading">
             <img src="/media/ben-cropped.png" alt="Ben Targett" class="profile-image" />
             <div class="description-text">
-                <h2 id="summary-heading">Game Programmer</h2>
-                <div>I am an experienced <span class="highlight">game programmer, writer, editor, and team manager</span> with a strong background in gameplay design, systems programming, level design, and user interface design.</div>
+                <h2 id="summary-heading">About me</h2>
+                <div>
+                    I am an experienced <span class="highlight">game programmer</span> with a strong background in gameplay design and systems programming.
+                    I'm currently learning Unreal Engine 5 with C++ and exploring <span class="highlight">game AI</span>.
+                </div>
                 <a href="/media/Ben%20Targett%20CV.pdf" class="tag button-container cv-button">
                     <span><i class="fa-solid fa-file-pdf" aria-hidden="true"></i>View my CV</span>
                 </a>
