@@ -15,7 +15,7 @@ export const projects = [
             ['Tutorial flow', 'Dedicated rooms teaching redirection and enemy variety'],
             ['Cinematic intro', 'Timeline signals for dialogue and damage']
         ],
-        media: { type: 'video', src: '/media/MayProto/proto2.mp4' },
+        media: { type: 'video', src: 'https://portfolio-media.bentargett.uk/Mayproto2.mp4' },
         technologies: [
             { name: 'Unity', icon: 'devicon-unity-plain' },
             { name: 'C#', icon: 'devicon-csharp-plain' },
@@ -40,7 +40,7 @@ export const projects = [
             ['Inventory', 'Contextual item use and access'],
             ['World interactions', 'Clear feedback for interactable objects']
         ],
-        media: { type: 'video', src: '/media/MayProto/proto1.mp4' },
+        media: { type: 'video', src: 'https://portfolio-media.bentargett.uk/mayproto1.mp4' },
         technologies: [
             { name: 'Unity', icon: 'devicon-unity-plain' },
             { name: 'C#', icon: 'devicon-csharp-plain' },
@@ -66,7 +66,7 @@ export const projects = [
             ['Dynamic difficulty', 'Preset-driven spawning linked to time of day'],
             ['Enemy encounters', 'Configurable enemy spawning and encounter pressure']
         ],
-        media: { type: 'video', src: '/media/CSharpScripting.mp4' },
+        media: { type: 'video', src: 'https://portfolio-media.bentargett.uk/CSharpScripting.mp4' },
         technologies: [
             { name: 'Unity', icon: 'devicon-unity-plain' },
             { name: 'C#', icon: 'devicon-csharp-plain' },
@@ -91,7 +91,7 @@ export const projects = [
             ['Unity Editor tools', 'Tools for importing <i>Quake 3</i> levels built in TrenchBroom'],
             ['Save/load system', 'Persistence for dialogue, inventory, and quest state']
         ],
-        media: { type: 'video', src: '/media/inkgame.mp4' },
+        media: { type: 'video', src: 'https://portfolio-media.bentargett.uk/inkgame.mp4' },
         technologies: [
             { name: 'Unity', icon: 'devicon-unity-plain' },
             { name: 'C#', icon: 'devicon-csharp-plain' },
@@ -117,7 +117,7 @@ export const projects = [
             ['Save/load system', 'Persistence between sessions'],
             ['Physics integration', 'Interaction between time mechanics and Unity physics']
         ],
-        media: { type: 'video', src: '/media/puzzlegame.mp4' },
+        media: { type: 'video', src: 'https://portfolio-media.bentargett.uk/puzzlegame.mp4' },
         technologies: [
             { name: 'Unity', icon: 'devicon-unity-plain' },
             { name: 'C#', icon: 'devicon-csharp-plain' },
@@ -145,7 +145,7 @@ export const projects = [
             ['Controller-first', 'Gamepad support with input glyphs for the current device'],
             ['User interface', 'Quick shortcuts for common combat actions']
         ],
-        media: { type: 'video', src: '/media/requiem-jan28.mp4' },
+        media: { type: 'video', src: 'https://portfolio-media.bentargett.uk/requiem-jan28.mp4' },
         technologies: [
             { name: 'Godot Engine 4', icon: 'devicon-godot-plain' },
             { name: 'GDScript', icon: 'code' },
