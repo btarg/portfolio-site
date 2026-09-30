@@ -1,6 +1,7 @@
 <script>
     export let technologies = [];
     export let tags = [];
+    export let showRiderLabel = false;
 
     const iconSources = {
         rider: 'https://cdn.jsdelivr.net/npm/simple-icons@v16/icons/rider.svg'
@@ -13,6 +14,9 @@
             {#if technology.icon === 'rider'}
                 <span class="skill-icon" title={technology.name}>
                     <img src={iconSources.rider} alt={technology.name} />
+                    {#if showRiderLabel}
+                        {technology.name}
+                    {/if}
                 </span>
             {:else}
                 <i class={technology.icon === 'code' ? 'fa-solid fa-code' : technology.icon} title={technology.name} aria-hidden="true"></i>
