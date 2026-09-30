@@ -164,12 +164,6 @@ a:focus-visible {
     transform: rotate(45deg) scale(1.15);
 }
 
-.icons {
-    margin-top: 1rem;
-}
-.icons i {
-    font-size: 2.5rem;
-}
 a i {
     color: var(--white);
 }
@@ -194,7 +188,7 @@ a i {
     transform: skew(10deg);
 }
 
-#box {
+.box {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -215,7 +209,7 @@ a i {
     overflow: hidden;
 }
 
-#box.contact-info {
+.box.contact-info {
     width: min(60%, 700px);
     font-size: clamp(1.2rem, 2.8vh, 1.45rem);
 }
@@ -229,11 +223,7 @@ a i {
     transform: skew(-5deg);
 }
 
-.videobox h2 {
-    transform: skew(-10deg);
-}
-
-#box.videobox {
+.box.videobox {
     flex-direction: column;
 }
 
@@ -336,8 +326,22 @@ video {
     object-fit: cover;
 }
 
-.media > iframe {
+.video-embed {
+    position: relative;
     width: min(100%, 100vh);
+    margin: 0 auto;
+    aspect-ratio: 16 / 9;
+    overflow: hidden;
+}
+
+.media-frame {
+    width: min(100%, 100vh);
+    margin: 0 auto;
+}
+
+.media-frame > video,
+.media-frame > iframe {
+    width: 100%;
     height: auto;
     max-height: none;
     aspect-ratio: 16 / 9;
@@ -345,16 +349,15 @@ video {
     display: block;
 }
 
-.media > iframe.youtube-player {
-    aspect-ratio: 4 / 3;
-}
-
-.video-embed {
+.media-frame.video-embed {
     position: relative;
-    width: min(100%, 100vh);
-    margin: 0 auto;
     aspect-ratio: 16 / 9;
     overflow: hidden;
+}
+
+.media-frame.video-embed > video,
+.media-frame.video-embed > iframe {
+    height: 100%;
 }
 
 .video-embed iframe {
@@ -364,7 +367,7 @@ video {
     max-height: none;
 }
 
-#boxrow {
+.contact-row {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -982,14 +985,14 @@ footer {
         box-sizing: border-box;
     }
 
-    #box {
+    .box {
         width: 92%;
         padding: 12px 12px;
         overflow: visible;
         box-sizing: border-box;
     }
 
-    #box.contact-info {
+    .box.contact-info {
         width: 92%;
     }
 
@@ -1266,7 +1269,7 @@ footer {
         width: 100%;
     }
 
-    #boxrow {
+    .contact-row {
         justify-content: center;
         flex-wrap: wrap;
         text-align: center;
