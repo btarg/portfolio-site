@@ -30,12 +30,7 @@
                     {#key project.slug}
                         <ProjectMedia media={project.media} controls autoplay />
                     {/key}
-                    <SkillTags technologies={project.technologies} tags={project.tags} />
-                    {#each project.links as link}
-                        <a href={link.href} class="link-button" target="_blank" rel="noreferrer">
-                            <i class={link.icon} aria-hidden="true"></i><span>{link.label}</span>
-                        </a>
-                    {/each}
+                    <SkillTags technologies={project.technologies} tags={project.tags} links={project.links} />
                     <a href="/" class="detail-back link-button">
                         <i class="fa-solid fa-arrow-left" aria-hidden="true"></i><span>Back to Portfolio</span>
                     </a>

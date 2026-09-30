@@ -1,6 +1,7 @@
 <script>
     export let technologies = [];
     export let tags = [];
+    export let links = [];
     export let showRiderLabel = false;
 
     const iconSources = {
@@ -27,6 +28,14 @@
     <div class="video-tags center-tags" aria-label="Project tags">
         {#each tags as tag}
             <div class="tag"><span>{tag}</span></div>
+        {/each}
+    </div>
+
+    <div class="project-links" aria-label="Project links">
+        {#each links as link}
+            <a href={link.href} class="link-button" target="_blank" rel="noreferrer">
+                <i class={link.icon} aria-hidden="true"></i><span>{link.label}</span>
+            </a>
         {/each}
     </div>
 </div>
