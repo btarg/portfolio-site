@@ -1,18 +1,17 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const mediaElements = document.querySelectorAll('video, iframe[src*="youtube.com/embed"]');
+    const mediaElements = Array.from(document.querySelectorAll('video, iframe[src*="youtube.com/embed"]'))
+        .filter(element => {
+            const hasControls = element.hasAttribute('controls') || element.src.includes('controls=1');
+            return !hasControls;
+        });
 
-    if (!mediaElements.length || !('IntersectionObserver' in window)) {
+    if (!mediaElements.length) {
         return;
     }
 
-    const pauseMedia = element => {
-        if (element.tagName === 'VIDEO') {
-            element.pause();
-            return;
-        }
-
+    const sendYouTubeCommand = (element, func) => {
         element.contentWindow.postMessage(
-            JSON.stringify({ event: 'command', func: 'pauseVideo', args: [] }),
+            JSON.stringify({ event: 'command', func, args: [] }),
             'https://www.youtube.com'
         );
     };
@@ -23,43 +22,68 @@ document.addEventListener('DOMContentLoaded', () => {
             return;
         }
 
-        element.contentWindow.postMessage(
-            JSON.stringify({ event: 'command', func: 'playVideo', args: [] }),
-            'https://www.youtube.com'
-        );
+        sendYouTubeCommand(element, 'playVideo');
     };
+
+    const hoveredMedia = new WeakSet();
+    const visibleMedia = new WeakSet();
+    const readyFrames = new WeakSet();
+    const playInFrame = window.matchMedia('(hover: none), (pointer: coarse)').matches;
+
+    const playWhenReady = element => {
+        if (!(hoveredMedia.has(element) || visibleMedia.has(element))) {
+            return;
+        }
+
+        window.setTimeout(() => {
+            if (hoveredMedia.has(element) || visibleMedia.has(element)) {
+                playMedia(element);
+            }
+        }, 150);
+    };
+
+    const observer = playInFrame && 'IntersectionObserver' in window
+        ? new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+                if (!entry.isIntersecting) {
+                    return;
+                }
+
+                visibleMedia.add(entry.target);
+
+                if (entry.target.tagName === 'VIDEO' || readyFrames.has(entry.target)) {
+                    playMedia(entry.target);
+                }
+            });
+        }, { threshold: 0.35 })
+        : null;
 
     mediaElements.forEach(element => {
         if (element.tagName === 'IFRAME') {
+            element.addEventListener('load', () => {
+                readyFrames.add(element);
+                playWhenReady(element);
+            });
+
             const source = new URL(element.src);
             source.searchParams.set('enablejsapi', '1');
             source.searchParams.set('start', '0');
-
-            element.addEventListener('load', () => {
-                window.setTimeout(() => {
-                    element.contentWindow.postMessage(
-                        JSON.stringify({ event: 'command', func: 'seekTo', args: [0, true] }),
-                        'https://www.youtube.com'
-                    );
-                }, 300);
-            }, { once: true });
-
             element.src = source.toString();
         }
+
+        if (playInFrame) {
+            observer?.observe(element);
+        } else {
+            element.addEventListener('mouseenter', () => {
+                hoveredMedia.add(element);
+
+                if (element.tagName === 'VIDEO' || readyFrames.has(element)) {
+                    playMedia(element);
+                }
+            });
+            element.addEventListener('mouseleave', () => {
+                hoveredMedia.delete(element);
+            });
+        }
     });
-
-    const pausedByScroll = new WeakSet();
-    const observer = new IntersectionObserver(entries => {
-        entries.forEach(entry => {
-            if (!entry.isIntersecting) {
-                pauseMedia(entry.target);
-                pausedByScroll.add(entry.target);
-            } else if (pausedByScroll.has(entry.target)) {
-                playMedia(entry.target);
-                pausedByScroll.delete(entry.target);
-            }
-        });
-    }, { threshold: 0.1 });
-
-    mediaElements.forEach(element => observer.observe(element));
 });

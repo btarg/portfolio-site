@@ -40,42 +40,22 @@
             <br>
 
             <section id="videos">
-                <div id="box" class="videobox">
-                    <div class="media">
+                <div class="media portfolio-grid">
 
-                        <div class="carousel-container">
-                            <button class="carousel-arrow carousel-prev" onclick="prevProject()">&lt;</button>
-
-                            <div class="carousel">
-
-                            <div class="carousel-dots">
-                                <span class="dot active" onclick="showProject(0)"></span>
-                                <span class="dot" onclick="showProject(1)"></span>
-                                <span class="dot" onclick="showProject(2)"></span>
-                                <span class="dot" onclick="showProject(3)"></span>
-                                <span class="dot" onclick="showProject(4)"></span>
-                                <span class="dot" onclick="showProject(5)"></span>
-                                <span class="dot" onclick="showProject(6)"></span>
-                            </div>
-
-                                <div class="project active" id="project-1">
+                                <div class="project" id="project-1">
                                     <h2>Vortex Shield Prototype</h2>
-                                    <div
-                                        class="video-embed">
-                                        <iframe src="https://www.youtube.com/embed/Bzc0xhrHeok?autoplay=1&mute=1"
-                                            title="Vortex Shield Prototype gameplay" frameborder="0"
-                                            style="top: 0; left: 0; width: 100%; height: 100%; position: absolute; border: 0;"
-                                            allowfullscreen scrolling="no"
-                                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                            referrerpolicy="strict-origin-when-cross-origin">
-                                        </iframe>
+                                    <div class="video-embed">
+                                        <video muted loop playsinline preload="metadata">
+                                            <source src="media/MayProto/proto2.mp4" type="video/mp4">
+                                            Your browser does not support the video tag.
+                                        </video>
                                     </div>
                                     <div class="skills-links-bar">
                                         <div class="skills-section">
                                             <i class="devicon-unity-plain" title="Unity"></i>
                                             <i class="devicon-csharp-plain" title="C#"></i>
                                             <i class="devicon-github-plain" title="GitHub (VCS)"></i>
-                                            <i class="devicon-rider-plain" title="JetBrains Rider"></i>
+                                            <span class="skill-icon" title="JetBrains Rider"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v16/icons/rider.svg" alt="">JetBrains Rider</span>
                                         </div>
                                         <div class="video-tags center-tags">
                                             <div class="tag"><span>Gameplay</span></div>
@@ -93,30 +73,26 @@
                                             them back.
                                             Includes a tutorial level, opening cutscene, and narrative hooks around
                                             redirecting magic rather than creating it.
-                                            <a href="unity-vortex-shield-prototype.html" class="tag button-container">
+                                            <a href="unity-vortex-shield-prototype.html" class="tag button-container read-more">
                                                 <span><i class="fa-solid fa-book-open"></i>Read More</span> </a>
                                         </span>
                                     </p>
                                 </div>
 
                                 <div class="project" id="project-2">
-                                    <h2>RE1-Inspired Survival Horror Puzzle Game</h2>
-                                    <div
-                                        class="video-embed">
-                                        <iframe src="https://www.youtube.com/embed/fJXct91m_8A?autoplay=1&mute=1"
-                                            title="RE1-inspired survival horror puzzle game gameplay" frameborder="0"
-                                            style="top: 0; left: 0; width: 100%; height: 100%; position: absolute; border: 0;"
-                                            allowfullscreen scrolling="no"
-                                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                            referrerpolicy="strict-origin-when-cross-origin">
-                                        </iframe>
+                                    <h2>Survival Horror Puzzle Prototype</h2>
+                                    <div class="video-embed">
+                                        <video muted loop playsinline preload="metadata">
+                                            <source src="media/MayProto/proto1.mp4" type="video/mp4">
+                                            Your browser does not support the video tag.
+                                        </video>
                                     </div>
                                     <div class="skills-links-bar">
                                         <div class="skills-section">
                                             <i class="devicon-unity-plain" title="Unity"></i>
                                             <i class="devicon-csharp-plain" title="C#"></i>
                                             <i class="devicon-github-plain" title="GitHub (VCS)"></i>
-                                            <i class="devicon-rider-plain" title="JetBrains Rider"></i>
+                                            <span class="skill-icon" title="JetBrains Rider"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v16/icons/rider.svg" alt="">JetBrains Rider</span>
                                         </div>
                                         <div class="video-tags center-tags">
                                             <div class="tag"><span>Gameplay</span></div>
@@ -128,12 +104,12 @@
                                         </div>
                                     </div>
                                     <p class="description">
-                                        <span>An <span class="highlight">Resident Evil 1</span>-inspired survival
+                                        <span>An <span class="highlight"><i>Resident Evil</i></span>-inspired survival
                                             horror puzzle game built around a one-axis, one-button input brief. I built
-                                            an <span class="highlight">Unreal-inspired player controller</span> to
+                                            an <span class="highlight">Unreal Engine-style player controller</span> to
                                             centralise input handling and distinguish taps from holds, supporting item
                                             use, inventory access, and contextual interactions.
-                                            <a href="one-button-survival-horror.html" class="tag button-container">
+                                            <a href="one-button-survival-horror.html" class="tag button-container read-more">
                                                 <span><i class="fa-solid fa-book-open"></i>Read More</span>
                                             </a>
                                         </span>
@@ -142,22 +118,18 @@
 
                                 <div class="project" id="project-3">
                                     <h2>Modular Survival Shooter Prototype</h2>
-                                    <div
-                                        class="video-embed">
-                                        <iframe src="https://www.youtube.com/embed/tk1RyzHBvtY?autoplay=1&mute=1"
-                                            title="Modular survival shooter prototype gameplay" frameborder="0"
-                                            style="top: 0; left: 0; width: 100%; height: 100%; position: absolute; border: 0;"
-                                            allowfullscreen scrolling="no"
-                                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                            referrerpolicy="strict-origin-when-cross-origin">
-                                        </iframe>
+                                    <div class="video-embed">
+                                        <video muted loop playsinline preload="metadata">
+                                            <source src="media/CSharpScripting.mp4" type="video/mp4">
+                                            Your browser does not support the video tag.
+                                        </video>
                                     </div>
                                     <div class="skills-links-bar">
                                         <div class="skills-section">
                                             <i class="devicon-unity-plain" title="Unity"></i>
                                             <i class="devicon-csharp-plain" title="C#"></i>
                                             <i class="devicon-github-plain" title="GitHub (VCS)"></i>
-                                            <i class="devicon-rider-plain" title="JetBrains Rider"></i>
+                                            <span class="skill-icon" title="JetBrains Rider"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v16/icons/rider.svg" alt="">JetBrains Rider</span>
                                         </div>
                                         <div class="video-tags center-tags">
                                             <div class="tag"><span>Gameplay Systems</span></div>
@@ -173,7 +145,7 @@
                                         <span>A <span class="highlight">Unity</span> survival shooter prototype
                                             focused on modular weapons, loot, and a <span class="highlight">Risk of
                                                 Rain 2</span>-inspired enemy-spawning system.
-                                            <a href="modular-survival-shooter.html" class="tag button-container">
+                                            <a href="modular-survival-shooter.html" class="tag button-container read-more">
                                                 <span><i class="fa-solid fa-book-open"></i>Read More</span>
                                             </a>
                                         </span>
@@ -182,7 +154,7 @@
 
                                 <div class="project" id="project-4">
                                     <h2>Unity Exploration Game</h2>
-                                    <video controls>
+                                    <video muted loop playsinline preload="metadata">
                                         <source src="media/inkgame.mp4" type="video/mp4">
                                         Your browser does not support the video tag.
                                     </video>
@@ -201,11 +173,6 @@
                                             <div class="tag"><span>Writing</span></div>
                                         </div>
                                         <div class="links-section">
-                                            <a href="https://github.com/btarg/UnityInkGame" class="link-button"
-                                                target="_blank">
-                                                <i class="fa-brands fa-github"></i><span>View Code</span>
-                                            </a>
-
                                         </div>
                                     </div>
                                     <p class="description">
@@ -213,8 +180,8 @@
                                             with <span class="highlight">C#</span> and <span
                                                 class="highlight">Ink</span>.
                                             Features branching narrative, custom dialogue system, and Unity Editor tools
-                                            for <span class="highlight">Quake 3</span> level importing.
-                                            <a href="unity-exploration-game.html" class="tag button-container">
+                                            for <span class="highlight"><i>Quake 3</i></span> level importing.
+                                            <a href="unity-exploration-game.html" class="tag button-container read-more">
                                                 <span><i class="fa-solid fa-book-open"></i>Read More</span> </a>
                                         </span>
                                     </p>
@@ -222,7 +189,7 @@
 
                                 <div class="project" id="project-5">
                                     <h2>Unity Puzzle Game</h2>
-                                    <video controls muted playsinline>
+                                    <video muted loop playsinline preload="metadata">
                                         <source src="media/puzzlegame.mp4" type="video/mp4">
                                         Your browser does not support the video tag.
                                     </video>
@@ -238,10 +205,6 @@
                                             <div class="tag"><span>Level Design</span></div>
                                         </div>
                                         <div class="links-section">
-                                            <a href="https://github.com/btarg/PuzzleGame" class="link-button"
-                                                target="_blank">
-                                                <i class="fa-brands fa-github"></i><span>View Code</span>
-                                            </a>
                                         </div>
                                     </div>
                                     <p class="description">
@@ -251,14 +214,14 @@
                                             puzzles
                                             across three levels with save/load functionality.
                                         </span>
-                                        <a href="unity-puzzle-game.html" class="tag button-container">
+                                        <a href="unity-puzzle-game.html" class="tag button-container read-more">
                                             <span><i class="fa-solid fa-book-open"></i>Read More</span> </a>
                                     </p>
                                 </div>
 
                                 <div class="project" id="project-6">
                                     <h2>Godot Turn-based RPG</h2> <!-- Added H2 title -->
-                                    <video controls muted playsinline> <!-- Added muted and playsinline -->
+                                    <video muted loop playsinline preload="metadata">
                                         <source src="media/requiem-jan28.mp4" type="video/mp4">
                                         Your browser does not support the video tag.
                                     </video>
@@ -275,18 +238,13 @@
                                             <div class="tag"><span>Tools</span></div>
                                         </div>
                                         <div class="links-section">
-                                            <a href="https://github.com/btarg/third-person-controller"
-                                                class="link-button" target="_blank">
-                                                <i class="fa-brands fa-github"></i><span>View Code</span>
-                                            </a>
-
                                         </div>
                                     </div>
                                     <p class="description">
                                         <span>A turn-based RPG prototype built in <span class="highlight">Godot 4</span>
                                             with <span class="highlight">GDScript</span>.
                                             Features custom combat mechanics, UI systems, and camera controls.
-                                            <a href="godot-rpg-prototype.html" class="tag button-container">
+                                            <a href="godot-rpg-prototype.html" class="tag button-container read-more">
                                                 <span><i class="fa-solid fa-book-open"></i>Read More</span> </a>
                                         </span>
                                     </p>
@@ -294,8 +252,8 @@
 
                                 <div class="project" id="project-7">
                                     <h2>Twitch Vs Minecraft Mod</h2> <!-- Added H2 title -->
-                                    <iframe
-                                        src="https://www.youtube.com/embed/thuyjV7FJx4?autoplay=1&mute=1"
+                                    <iframe class="youtube-player"
+                                        src="https://www.youtube.com/embed/thuyjV7FJx4?mute=1&controls=0&loop=1&playlist=thuyjV7FJx4&enablejsapi=1&playsinline=1"
                                         title="YouTube video player" frameborder="0"
                                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                                         referrerpolicy="strict-origin-when-cross-origin"
@@ -313,12 +271,6 @@
                                             <div class="tag"><span>User Interface</span></div>
                                         </div>
                                         <div class="links-section">
-                                            <a href="https://www.curseforge.com/minecraft/mc-mods/twitch-vs-minecraft"
-                                                class="link-button" target="_blank">
-                                                <img src="media/curseforge-dark.svg" alt="CurseForge" class="curseforge"
-                                                    style="width: 20px; height: 20px; vertical-align: middle; margin-left: 5px;">
-                                                <span>Homepage</span>
-                                            </a>
                                         </div>
                                     </div>
                                     <p class="description">
@@ -329,23 +281,18 @@
                                                 class="highlight">Java</span>.
                                             Downloaded over <span class="highlight">20,000</span> times on CurseForge
                                             and Modrinth.
-                                            <a href="twitch-minecraft-mod.html" class="tag button-container">
+                                            <a href="twitch-minecraft-mod.html" class="tag button-container read-more">
                                                 <span><i class="fa-solid fa-book-open"></i>Read More</span></a>
                                         </span>
                                     </p>
                                 </div>
-
-                            </div>
-
-                            <button class="carousel-arrow carousel-next" onclick="nextProject()">&gt;</button>
-                        </div>
-                    </div>
+                </div>
                 </div>
             </section>
             <br>
             <br>
 
-            <div class="description smalldesc">
+            <div class="description smalldesc portfolio-summary">
                 <img src="media/ben-cropped.png" alt="Ben Targett" class="profile-image">
                 <div class="description-text">
                     <div>
@@ -354,20 +301,13 @@
                     </div>
                     <br>
                     <div>
-                        I have a strong background in C# and GDScript, and I am proficient in using multiple game
+                        I have a strong background in C# and C++, and I am proficient in using multiple game
                         engines.
                         I have experience in gameplay design and programming, level design, and user interface design.
                     </div>
                     <br>
-                    <!-- Quit yo yappin son -->
-                    <!-- <div>
-                        My work has been featured in several popular Twitch streams, and I have a strong understanding
-                        of game design principles.
-                        <br>I have also previously a managed successful student group at university, where I managed a
-                        team to build a safe space for students to collaborate on their work.
-                    </div> -->
 
-                    <a href="media/Ben Targett CV.pdf" class="tag button-container">
+                    <a href="media/Ben Targett CV.pdf" class="tag button-container cv-button">
                         <span><i class="fa-solid fa-file-pdf"></i>View my CV</span>
                     </a>
 
@@ -399,107 +339,8 @@
         <footer>
             website design &copy; 2025-2026 <a href="https://github.com/btarg">btarg.</a>
         </footer>
-        <script>
-            document.addEventListener('DOMContentLoaded', function () {
-                let currentProject = 0;
-                const projects = document.querySelectorAll('.project');
-                const dots = document.querySelectorAll('.dot');
-                let videos = document.querySelectorAll('video');
-                let youtubeTimer = null;
-
-                const youtubeDuration = 1380; // 23 minutes in seconds
-
-                // Set up all videos with autoplay and muted attributes
-                videos.forEach(video => {
-                    video.muted = true;
-                    video.autoplay = true;
-
-                    // Add event listener for when video ends
-                    video.addEventListener('ended', function () {
-                        // Only advance if this is the currently active video
-                        if (video.closest('.project').classList.contains('active')) {
-                            nextProject();
-                        }
-                    });
-                });
-
-                function showProject(index) {
-                    // Clear any existing YouTube timer
-                    if (youtubeTimer) {
-                        clearTimeout(youtubeTimer);
-                        youtubeTimer = null;
-                    }
-
-                    // Hide all projects and pause all videos
-                    for (let i = 0; i < projects.length; i++) {
-                        projects[i].classList.remove('active');
-                        dots[i].classList.remove('active');
-
-                        // Pause any videos in non-active projects
-                        let projectVideo = projects[i].querySelector('video');
-                        if (projectVideo) {
-                            projectVideo.pause();
-                        }
-                    }
-
-                    // Show the selected project
-                    projects[index].classList.add('active');
-                    dots[index].classList.add('active');
-                    currentProject = index;
-
-                    // Play the video in the active project if it exists
-                    let activeVideo = projects[index].querySelector('video');
-                    if (activeVideo) {
-                        activeVideo.play();
-                    }
-
-                    // Handle YouTube embeds - set a timer to advance after estimated duration
-                    // This is a workaround since we can't easily detect when a YouTube embed finishes
-                    if (projects[index].querySelector('iframe[src*="youtube"]')) {
-                        youtubeTimer = setTimeout(function () {
-                            nextProject();
-                        }, youtubeDuration * 1000);
-                    }
-                }
-
-                window.nextProject = function () {
-                    let next = currentProject + 1;
-                    if (next >= projects.length) {
-                        next = 0;
-                    }
-                    showProject(next);
-                };
-
-                window.prevProject = function () {
-                    let prev = currentProject - 1;
-                    if (prev < 0) {
-                        prev = projects.length - 1;
-                    }
-                    showProject(prev);
-                };
-
-                window.showProject = function (index) {
-                    showProject(index);
-                };
-
-                // Add keyboard navigation
-                document.addEventListener('keydown', function (e) {
-                    if (e.key === 'ArrowRight') {
-                        nextProject();
-                    } else if (e.key === 'ArrowLeft') {
-                        prevProject();
-                    }
-                });
-
-                // Initialize the first video to play
-                showProject(0);
-            });
-        </script>
     </div>
     <script src="media.js"></script>
-</body>
-
-</div>
 </body>
 
 </html>
