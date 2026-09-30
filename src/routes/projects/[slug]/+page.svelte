@@ -27,7 +27,9 @@
             <div class="box videobox" id="project-box">
                 <h1 id="project-heading" class="project-title">{project.title}</h1>
                 <div class="media">
-                    <ProjectMedia media={project.media} controls />
+                    {#key project.slug}
+                        <ProjectMedia media={project.media} controls autoplay />
+                    {/key}
                     <SkillTags technologies={project.technologies} tags={project.tags} />
                     {#each project.links as link}
                         <a href={link.href} class="link-button" target="_blank" rel="noreferrer">

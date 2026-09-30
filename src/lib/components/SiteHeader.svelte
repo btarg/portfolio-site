@@ -18,8 +18,8 @@
     {/if}
     <h2>{pageSubtitle}</h2>
 
-    {#if activeSlug || pageTitle === 'Ben Targett'}
-        <nav class="carousel-dots" aria-label="Project navigation">
+    {#if activeSlug}
+        <nav class="nav-dots" aria-label="Project navigation">
             {#each projects as project, index}
                 <a
                     class="dot"

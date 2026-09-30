@@ -12,8 +12,7 @@
         {#each technologies as technology}
             {#if technology.icon === 'rider'}
                 <span class="skill-icon" title={technology.name}>
-                    <img src={iconSources.rider} alt="" />
-                    {technology.name}
+                    <img src={iconSources.rider} alt={technology.name} />
                 </span>
             {:else}
                 <i class={technology.icon === 'code' ? 'fa-solid fa-code' : technology.icon} title={technology.name} aria-hidden="true"></i>
